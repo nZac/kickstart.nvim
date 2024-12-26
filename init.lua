@@ -940,5 +940,11 @@ require('lazy').setup({
   },
 })
 
+require('neotest').setup {
+  adapters = {
+    require 'neotest-python' {},
+  },
+}
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
