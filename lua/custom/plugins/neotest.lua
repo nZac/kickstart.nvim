@@ -10,9 +10,16 @@ return {
     {
       '<leader>tn',
       function()
-        require('neotest').run.run { strategy = 'dap' }
+        require('neotest').run.run { strategy = 'dap', suite = false }
       end,
       desc = '[T]est [N]earest',
+    },
+    {
+      '<leader>tl',
+      function()
+        require('neotest').run.run_last { strategy = 'dap', suite = false }
+      end,
+      desc = '[T]est [L]ast',
     },
     {
       '<leader>tf',
