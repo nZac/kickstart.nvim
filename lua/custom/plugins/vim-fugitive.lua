@@ -2,6 +2,7 @@ return {
   {
     'tpope/vim-fugitive',
     config = function()
+      vim.keymap.set('n', '<leader>gP', ':Git push --force-with-lease<CR>', { desc = '[G]it [P]ush Force' })
       vim.keymap.set('n', '<leader>ge', ':Gedit:<CR>', { desc = '[G]it [E]dit' })
       vim.keymap.set('', '<leader>gB', ':GBrowse<CR>', { desc = '[G]it [B]rowse' })
       vim.keymap.set('', '<leader>gL', ':Git log --oneline<CR>', { desc = '[G]it [L]og' })
