@@ -39,6 +39,7 @@ return { -- Autoformat
         typescript = { 'prettierd', 'eslint' },
         typescriptreact = { 'prettierd', 'eslint' },
         yaml = { 'prettier' },
+        hcl = { 'hcl' },
       },
     }
 
